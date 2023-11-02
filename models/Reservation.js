@@ -4,7 +4,7 @@ import { DataTypes } from 'sequelize'
 //Amener la connexion a la base de donnees
 import database from "../connexion.js"
 
-const Reservation = database.define('Reservation', {
+const Reservation2 = database.define('Reservation5', {
     Prenom: {
         type: DataTypes.STRING,
         allowNull: false
@@ -28,18 +28,28 @@ const Reservation = database.define('Reservation', {
         type:DataTypes.STRING,
     },
     Date_de_debut_de_la_reservation:{
-        type:DataTypes.DATEONLY,
+        type:DataTypes.STRING,
 
     },
     Date_de_fin_de_la_reservation:{
-        type:DataTypes.DATEONLY,
+        type:DataTypes.STRING,
 
     },
     Cout:{
         type:DataTypes.DECIMAL,
-    }
+    },
+    Marque:{
+        type:DataTypes.STRING,
+    },
+    Modele:{
+        type:DataTypes.STRING,
+    },
+    Annee:{
+        type:DataTypes.INTEGER,
+    },
+
 
 
 })
 
-export default Reservation
+export default Reservation2

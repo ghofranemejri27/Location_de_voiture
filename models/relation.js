@@ -1,10 +1,10 @@
 // Importer tous les models
 import Voiture from "./Voiture.js";
-import Reservation from "./Reservation.js";
+import Reservation2 from "./Reservation.js";
 
 
 // Appliquer les relations (associations)
-Voiture.hasMany(Reservation)
-Reservation.belongsTo(Voiture)
+Voiture.hasMany(Reservation2)
+Reservation2.belongsTo(Voiture)
 
-export  { Voiture, Reservation }
+export  { Voiture, Reservation2 }
